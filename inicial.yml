@@ -1,0 +1,9 @@
+- name: ParcharServidores Linux
+# a quienes se les va a operar se vale all/<servidores>/o gruposnombrados
+  hosts: all
+# cada tarea es a alto nivel  
+  tasks:
+   - name:  Dame un mensaje
+     ansible.builtin.debug:
+       msg: "Bienvenido al mundo ansible"
+  become: true     
